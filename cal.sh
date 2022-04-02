@@ -1,6 +1,8 @@
 #!/bin/bash
 
 #1. read num1.txt, num2.txt
+
+declare -a arr
 while read line; do
 	num1=$line
 done < num1.txt
