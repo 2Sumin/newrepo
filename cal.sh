@@ -1,5 +1,6 @@
 #!/bin/bash
 
+echo "project management in github"
 #1. read num1.txt, num2.txt
 
 declare -a arr
