@@ -1,5 +1,12 @@
 #!/bin/bash
 
+echo "hi"
+echo "project management in github"
+
+#1. read num1.txt, num2.txt
+echo "bye"
+
+
 echo "project management in github"
 #1. read num1.txt, num2.txt
 
