@@ -2,7 +2,7 @@
 echo "hi"
 echo "project management in github"
 #1. read num1.txt, num2.txt
-
+echo "bye"
 declare -a arr
 while read line; do
 	num1=$line
