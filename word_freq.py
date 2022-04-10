@@ -15,4 +15,8 @@ while True:
 	#3. split only word
 	word=line.split('.,!@#$%^&*/')
 
-
+	for x in word:
+		x.lower()
+		dic[x]=dic.get(x,0)+1
+dicSorted=sorted(d.items(), key=lambda y: y[1], reverse=True)
+	
