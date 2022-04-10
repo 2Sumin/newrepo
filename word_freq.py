@@ -13,7 +13,7 @@ while True:
 	if not line:
 		break
 	#3. split only word
-	word=line.split('.,!@#$%^&*/ ')
+	word=line.split(".,!@#$%^&*/ ")
 
 	for x in word:
 		x.lower()
