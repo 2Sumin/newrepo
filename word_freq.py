@@ -19,7 +19,7 @@ while True:
 		x.lower()
 		dic[x]=dic.get(x,0)+1
 
-dicSorted=sorted(d.items(), key=lambda y: y[1], reverse=True)
+dicSorted=sorted(dic.items(), key=lambda y: y[1], reverse=True)
 
 for i,j in dic.items():
 	print('{:10} {:>6}'.format(i,j))
