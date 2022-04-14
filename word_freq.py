@@ -2,8 +2,11 @@
 import sys
 
 #1. open textfile
-textfile=open('textfile.txt','r')
+#textfile=open('textfile.txt','r')
+#textfile=open(sys.argv[0],'r')
 
+filename=sys.argv[1]
+textfile=open(filename,'r')
 dic={}
 
 #2. read file line-by-line
@@ -28,9 +31,14 @@ dicSorted = sorted(dic.items(),
                               reverse=True, 
                               key=lambda item: item[1])
 
-
+cnt=0
+final_num=int(sys.argv[2])
 for key, value in dicSorted :
+	cnt+=1
+	if cnt == final_num:
+		break
 	#print(key, value)
+	
 	print('{:10} {:>6}'.format(key,value))
 #for i,j in dicSorted.items():
 	#print('{:10} {:>6}'.format(i,j))
@@ -39,3 +47,5 @@ for key, value in dicSorted :
 
 #for key, value in dicSorted.items():
 	#print(key, value)
+
+
