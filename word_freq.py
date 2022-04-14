@@ -1,9 +1,7 @@
 #!/usr/bin/python
 import sys
-import string
 
 #1. open textfile
-
 filename=sys.argv[1]
 textfile=open(filename,'r')
 
