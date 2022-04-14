@@ -30,8 +30,8 @@ dicSorted = sorted(dic.items(),
 
 
 for key, value in dicSorted :
-    print(key, value)
-
+	#print(key, value)
+	print('{:10} {:>6}'.format(key,value))
 #for i,j in dicSorted.items():
 	#print('{:10} {:>6}'.format(i,j))
 	#print(i,j)
