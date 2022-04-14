@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import sys
+import string
 
 #1. open textfile
 
@@ -13,8 +14,6 @@ lines=textfile.readlines()
 
 for i in range (len(lines)) :
 	#3. split only word
-	
-	#word=lines[i].split(".,!@#$%^&*/n ")
 	word=lines[i].split()
 	for x in word:
 		x.lower()
