@@ -17,13 +17,25 @@ for i in range (len(lines)) :
 	for x in word:
 		x.lower()
 		dic[x]=dic.get(x,0)+1
+		#dicSorted=sorted(dic.dicsorted())
 		#if x in dic:
 			#dic[x]+=1
 		#else:
 			#dic[x]=1
 #dicSorted=sorted(dic.items(), key=lambda y: y[1], reverse=True)
 
-for i,j in dic.items():
+dicSorted = sorted(dic.items(), 
+                              reverse=True, 
+                              key=lambda item: item[1])
+
+
+for key, value in dicSorted :
+    print(key, value)
+
+#for i,j in dicSorted.items():
 	#print('{:10} {:>6}'.format(i,j))
-	print(i,j)
-	
+	#print(i,j)
+#print(dicSorted)	
+
+#for key, value in dicSorted.items():
+	#print(key, value)
