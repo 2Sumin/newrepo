@@ -1,5 +1,6 @@
 #!/usr/bin/python
 import sys
+import re
 
 #1. open textfile
 filename=sys.argv[1]
@@ -13,6 +14,9 @@ lines=textfile.readlines()
 for i in range (len(lines)) :
 	#3. split only word
 	word=lines[i].split()
+	for j in range (len(word)):
+		re.sub('[^A-Za-z0-9]+', '', word[j])
+	
 	for x in word:
 		x.lower()
 		dic[x]=dic.get(x,0)+1
