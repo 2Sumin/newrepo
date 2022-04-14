@@ -4,25 +4,23 @@ import sys
 #1. open textfile
 textfile=open('textfile.txt','r')
 
-#dictionary
 dic={}
 
-while True:
-	#2. read file line-by-line
-	line=textfile.readline()
-	if not line:
-		break
+#2. read file line-by-line
+lines=textfile.readlines()
+
+for i in range (len(lines)) :
 	#3. split only word
 	
-	word=line.split(".,!@#$%^&*/ ")
-
+	#word=lines[i].split(".,!@#$%^&*/n ")
+	word=lines[i].split()
 	for x in word:
 		x.lower()
-		#dic[x]=dic.get(x,0)+1
-		if x in dic:
-			dic[x]+=1
-		else:
-			dic[x]=1
+		dic[x]=dic.get(x,0)+1
+		#if x in dic:
+			#dic[x]+=1
+		#else:
+			#dic[x]=1
 #dicSorted=sorted(dic.items(), key=lambda y: y[1], reverse=True)
 
 for i,j in dic.items():
