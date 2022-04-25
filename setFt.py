@@ -2,7 +2,9 @@
 import sys
 
 #1. input integer list
+print("input the 1st list: ",end='')
 listA=input()
+print("input the 2nd list: ",end='')
 listB=input()
 
 #2. convert list into set
@@ -15,6 +17,12 @@ setB=set(setB)
 setUnion=setA.union(setB)
 setIntersection=setA.intersection(setB)
 
+#4. convert set into list
+setUnion=list(setUnion)
+setIntersection=list(setIntersection)
+
 if __name__=='__main__':
+	print("union: ",end='')
 	print(setUnion)
+	print("intersection: ",end='')
 	print(setIntersection)
